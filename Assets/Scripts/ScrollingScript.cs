@@ -112,7 +112,7 @@ public class ScrollingScript : MonoBehaviour
     /// <param name="renderer">The renderer to check for visibility.</param>
     /// <param name="camera">The camera to check against.</param>
     /// <returns>true if the renderer is visible to the camera; otherwise false.</returns>
-    private bool IsVisibleFrom(Renderer renderer, Camera camera)
+    public static bool IsVisibleFrom(Renderer renderer, Camera camera)
     {
         var planes = GeometryUtility.CalculateFrustumPlanes(camera);
         return GeometryUtility.TestPlanesAABB(planes, renderer.bounds);

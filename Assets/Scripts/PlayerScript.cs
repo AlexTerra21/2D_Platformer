@@ -40,6 +40,7 @@ public class PlayerScript : MonoBehaviour
 			{
 				// ложь, так как игрок не враг
 				weapon.Attack(false);
+                SoundEffectsHelper.Instance.MakePlayerShotSound();
 			}
 		}
         // 6 – Убедиться, что игрок не выходит за рамки кадра
