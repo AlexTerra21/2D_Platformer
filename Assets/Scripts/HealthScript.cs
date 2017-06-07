@@ -31,7 +31,9 @@ public class HealthScript : MonoBehaviour
 
             SoundEffectsHelper.Instance.MakeExplosionSound();
 			// Смерть!
-			Destroy(gameObject);
+            Destroy(gameObject);
+            if (gameObject.GetComponent<PlayerScript>() is PlayerScript)
+                gameObject.GetComponent<PlayerScript>().OnDestroy();
 		}
 	}
 

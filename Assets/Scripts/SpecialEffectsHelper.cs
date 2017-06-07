@@ -41,11 +41,9 @@ public class SpecialEffectsHelper : MonoBehaviour
       Quaternion.identity
     ) as ParticleSystem;
 
+
     // Убедитесь, что это будет уничтожено
-    Destroy(
-      newParticleSystem.gameObject,
-      newParticleSystem.startLifetime
-    );
+    Destroy(newParticleSystem.gameObject,newParticleSystem.main.startLifetime.constant);
 
     return newParticleSystem;
   }

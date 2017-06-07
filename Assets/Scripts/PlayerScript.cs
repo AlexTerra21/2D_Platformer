@@ -101,4 +101,12 @@ public class PlayerScript : MonoBehaviour
 			if (playerHealth != null) playerHealth.Damage(1);
 		}
 	}
+
+    public void OnDestroy()
+    {
+        // Игра окончена.
+        // Добавьте скрипт к родителю, поскольку текущий игровой
+        // объект, скорее всего, будет тут же уничтожен.
+        transform.parent.gameObject.AddComponent<GameOverScript>();
+    }
 }
