@@ -298,6 +298,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175d078519babb14295ce3e44ed9f595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BossBodies:
+  - {fileID: 21300000, guid: 35f441ae87df31c4a8866d3c08a696a4, type: 3}
+  - {fileID: 21300002, guid: 35f441ae87df31c4a8866d3c08a696a4, type: 3}
+  - {fileID: 21300004, guid: 35f441ae87df31c4a8866d3c08a696a4, type: 3}
+  - {fileID: 21300006, guid: 35f441ae87df31c4a8866d3c08a696a4, type: 3}
   minAttackCooldown: 0.5
   maxAttackCooldown: 2
 --- !u!114 &114549834561392430
